@@ -4,9 +4,10 @@ gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :development, :test do
+group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 # gem 'sqlite3'
 
@@ -26,7 +27,13 @@ end
 gem 'jquery-rails'
 
 group :test do
+  gem 'rspec-rails'
   gem 'capybara'
+  gem 'rb-fchange'
+  gem 'rb-notifu'
+  gem 'win32console'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
